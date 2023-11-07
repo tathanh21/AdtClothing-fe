@@ -1,0 +1,100 @@
+.footer-top{
+    background-color:#f3f3f3 ;
+    padding: 15px 0;
+}
+.title-mail span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+form.form [type="email"]{
+    width: 70%;
+    height: 45px;
+    font-size: 17px;
+    border: 1px solid #eaeaea;
+    float: left;
+    background-color: #fbfbfb;
+    outline: none;
+    padding-left: 10px;
+}
+form.form button{
+    float: left;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color:black;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: white;
+		transition: all .3s;
+		z-index: -1;
+        border: 1px solid black;
+	}
+	&:hover {
+		color: black;
+		&:before {
+			width: 100%;
+		}
+	}
+
+    // transition: background-color 0.3s;
+}
+// form.form button:hover{
+//     animation: changColor 0.5s ease-in-out;
+// }
+// @keyframes changColor {
+//     0%{
+//         background-color: white; color: #000;
+//     } 
+    
+//   100% {
+//     background-color: white; color: #000;}
+// }
+.support-contact span{
+    font-size: 14px;
+}
+.support-contact .phone{
+    color: #f94c43;
+}
+.footer-center{
+    padding: 40px 0;
+}
+.content1-footer p{
+    font-size: 13px;
+}
+ .links{
+  list-style: none;
+  padding: 0;
+}
+.footer-bottom{
+    border-top: 0.1px solid #a1a1a1;
+}
+.bottom-title{
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+    
+}

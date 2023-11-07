@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'adtclothing';
+  images = [
+    { img: '../assets/images/banner.webp' },
+    { img: '../assets/images/banner.webp' },
+  ];
+  slideConfig = {
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "dots": true,
+    "infinite": true
+  };
 }
